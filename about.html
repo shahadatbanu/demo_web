@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>university website Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="logo.png" alt="" /></a>
+
+        <div class="nav-links" id="navLinks">
+          <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contect.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="bi bi-list" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <!-- about us content  -->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We Are The World's Largest university</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+            quidem eius nostrum ratione perspiciatis aspernatur consectetur
+            autem molestias, aut, nobis dolore quod expedita illum debitis.
+            Fugit nisi eaque odio deleniti eveniet consequuntur sint eum quia,
+            expedita accusantium neque itaque dolorum voluptatum! Quisquam error
+            doloremque rerum eum tempore mollitia quos dolorem.
+          </p>
+          <a href="" class="btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="about.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis
+        odio amet, provident facilis omnis temporibus,<br />
+        dicta aut, maxime adipisci illum quia sed! Officia, dolor nam!
+      </p>
+      <div class="icon">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-linkedin"></i>
+      </div>
+      <p>Made With <i class="bi bi-heart"></i> By Imperial university</p>
+    </section>
+  </body>
+  <script>
+    let navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = 0;
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</html>
